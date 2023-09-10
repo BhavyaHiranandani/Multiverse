@@ -1,0 +1,92 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 15px 30px;
+    font-family:'Nunito', sans-serif;
+    font-size: 15px;
+    padding: 7px;
+    background-color: black;
+    /* background-image: url("Images/blackstar.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 100vmax 100vmax;
+     */
+}
+
+header {
+    text-align: center;
+    font-size: larger;
+    font-style: italic;
+    font-weight: 1200;
+    margin: 17px;
+    background-image: url("Images/black.jpg");
+}
+
+.box {
+    border: 3px solid white;
+    border-radius: 7px;
+    background-color: white;
+    padding: 5px 20px 15px 20px;
+    background-image: url("Images/blackstar.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-clip: padding-box;
+    background-size: cover;
+}
+
+h2{
+    color: whitesmoke;
+}
+
+p {
+    color: whitesmoke;
+}
+
+.gender {
+    color: black;
+}
+
+input[type="text"],
+input[type="date"],
+input[type="email"],
+input[type="number"],
+input[type="password"],
+input[type="month"],
+select,
+textarea {
+    width: 100%;
+    padding: 12px;
+    border:1px solid silver;
+    border-radius: 5px;
+    margin: 7px;
+}
+
+fieldset {
+    background-color: white;
+    border: 1px solid silver;
+    border-radius: 5px;
+}
+
+input[type="submit"] {
+    background-color: skyblue;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 5px;
+    margin: 7px;
+    cursor: pointer;
+    width: 100%;
+}
+
+input[type="submit"]:hover{
+    background-color: springgreen;
+}
+
+small {
+    color: whitesmoke;
+}
+
+a {
+    text-decoration: none;
+}

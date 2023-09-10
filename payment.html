@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="payment.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Nunito:wght@600&display=swap" rel="stylesheet">
+    <title>Payment Gateway</title>
+  </head>
+  <body>
+    <header style="background-color: black; padding: 40px;">
+      <h1 style="color: whitesmoke;">PAYMENT FORM</h1>
+    </header>
+    <div class="box">
+    <form action="">
+      <section>
+      <h2>User Information</h2>
+      <p>Name <sup>*</sup>: <input type="text" name="name" required placeholder="Enter your full name" /></p>
+      <fieldset>
+        <!-- fieldset is used to make a field/box around the question -->
+        <legend>Gender <sup>*</sup></legend>
+        <!-- Legend tag is used to make a heading for the information!!! -->
+        <p class="gender">
+          Male <input type="radio" name="gender" id="male" required />
+          Female <input type="radio" name="gender" id="female" required>
+        </p>
+      </fieldset>
+      <p>
+        Date of Birth<sup>*</sup> :
+        <input type="date" name="dob" id="dob" required />
+      </p>
+      <p>
+        Address:
+        <textarea name="address" id="address" cols="50" rows="5" placeholder="Enter your address"></textarea>
+      </p>
+      <p>
+        Email<sup>*</sup> :
+        <input type="email" name="mail" id="mail" required placeholder="eg: abc@xyz.com"/>
+      </p>
+      <!--It check whether the text entered is an email or not!!!  -->
+      <p>
+        Pincode<sup>*</sup> :
+        <input type="number" name="pincode" id="pincode" required placeholder="eg: 123456"/>
+      </p>
+    </section>
+    <section>
+      <h2>Payment Information</h2>
+      <p>
+        Card Type<sup>*</sup> :
+        <select name="cardtype" id="cardtype" required>
+          <option value="">---Select a card type---</option>
+          <!--Here, I have left value empty,
+            so that it doesn't work if someone cliks on submit by mistake -->
+          <option value="visa">Visa</option>
+          <option value="mastercard">Mastercard</option>
+          <option value="ammex">American Express</option>
+          <option value="rupay">Rupay</option>
+        </select>
+      </p>
+      <p>
+        Card Number<sup>*</sup> :
+        <input type="number" name="card_num" id="card_num" required placeholder="(12 digit number)"/>
+      </p>
+      <p>
+        Expiry Date<sup>*</sup> :
+        <input type="month" name="exp_date" id="exp_date" required />
+      </p>
+      <p>
+        CVV<sup>*</sup> : <input type="password" name="cvv" id="cvv" required placeholder="(3 digit number)"/>
+      </p>
+    </section>
+      <input type="submit" value="Pay" />
+      <!--Here, the value is set to "Pay" because this is displayed to the customer -->
+      <br />
+      <small>Required fields are followed by <sup>*</sup></small>
+      <!-- Required attribute lets the user know that it is compulsary to fill a certain field 
+        (I can also let users know that a certian field is neccessary by using an asterix* after its name)-->
+    </form>
+  </div>
+    <!--Using the Get method - The information entered by the user is embedded in the url and is not very sercure -->
+    <a href="Home.html"><h2>BACK</h2></a>
+  </body>
+</html>
+
+
+
+                         
